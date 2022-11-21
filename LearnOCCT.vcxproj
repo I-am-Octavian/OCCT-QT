@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ca246ffe-4a87-4747-a162-c1a9e23e7123}</ProjectGuid>
+    <RootNamespace>LearnOCCT</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\bin\intermedaites\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\bin\intermedaites\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\bin\intermedaites\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\bin\intermedaites\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)dependancies\OCCT\inc</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)dependancies\OCCT\inc</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)dependancies\FreeType\include;$(SolutionDir)dependancies\RapidJSON\include;$(SolutionDir)dependancies\FreeImage\include;$(SolutionDir)dependancies\VTK\include\vtk-9.1;$(SolutionDir)dependancies\TclTk\include;$(SolutionDir)dependancies\TBB\include;$(SolutionDir)dependancies\OCCT\inc;$(SolutionDir)dependancies\Qt\include;$(SolutionDir)dependancies\Qt\include\QtWidgets;$(SolutionDir)dependancies\Qt\include\Qt3DInput;$(SolutionDir)dependancies\Qt\include\QtGui</AdditionalIncludeDirectories>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)dependancies\Qt\lib;$(SolutionDir)dependancies\FreeImage\lib\Debug;$(SolutionDir)dependancies\FreeType\libd;$(SolutionDir)dependancies\VTK\lib;$(SolutionDir)dependancies\TclTk\lib;$(SolutionDir)dependancies\OCCT\win64\vc143\libd;$(SolutionDir)dependancies\TBB\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Qt5Widgetsd.lib;Qt5Guid.lib;Qt5Cored.lib;TKOpenGl.lib;TKService.lib;TKG3d.lib;TKOffset.lib;TKBRep.lib;TKMath.lib;TKBO.lib;vtkCommonExecutionModel-9.1.lib;TKIVtk.lib;TKV3d.lib;vtkRenderingOpenGL2-9.1.lib;vtkInteractionStyle-9.1.lib;vtkRenderingCore-9.1.lib;vtkCommonCore-9.1.lib;TKPrim.lib;TKTopAlgo.lib;TKernel.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)dependancies\FreeType\include;$(SolutionDir)dependancies\RapidJSON\include;$(SolutionDir)dependancies\FreeImage\include;$(SolutionDir)dependancies\VTK\include\vtk-9.1;$(SolutionDir)dependancies\TclTk\include;$(SolutionDir)dependancies\TBB\include;$(SolutionDir)dependancies\OCCT\inc;$(SolutionDir)dependancies\Qt\include;$(SolutionDir)dependancies\Qt\include\QtWidgets;$(SolutionDir)dependancies\Qt\include\Qt3DInput;$(SolutionDir)dependancies\Qt\include\QtGui</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Qt5Widgets.lib;Qt5Gui.lib;Qt5Core.lib;TKOpenGl.lib;TKService.lib;;TKG3d.lib;TKMath.lib;TKBRep.lib;TKOffset.lib;TKBO.lib;vtkCommonExecutionModel-9.1.lib;TKIVtk.lib;TKV3d.lib;vtkCommonCore-9.1.lib;vtkRenderingCore-9.1.lib;vtkRenderingOpenGL2-9.1.lib;vtkInteractionStyle-9.1.lib;TKPrim.lib;TKTopAlgo.lib;TKernel.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)dependancies\Qt\lib;$(SolutionDir)dependancies\FreeImage\lib\Release;$(SolutionDir)dependancies\FreeType\lib;$(SolutionDir)dependancies\VTK\lib;$(SolutionDir)dependancies\TclTk\lib;$(SolutionDir)dependancies\OCCT\win64\vc143\lib;$(SolutionDir)dependancies\TBB\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Renderer.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Viewer.cpp" />
+    <ClCompile Include="src\ViewerInteractor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="dependancies\DependanciesVersion.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Boolean.h" />
+    <ClInclude Include="src\Renderer.h" />
+    <ClInclude Include="src\Shapes.h" />
+    <ClInclude Include="src\ui_occQt.h" />
+    <ClInclude Include="src\Viewer.h" />
+    <ClInclude Include="src\ViewerInteractor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\.qmake.stash" />
+    <None Include="src\occqt.qrc" />
+    <None Include="src\occQt.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\box.png" />
+    <Image Include="Resources\chamfer.png" />
+    <Image Include="Resources\common.png" />
+    <Image Include="Resources\cone.png" />
+    <Image Include="Resources\cut.png" />
+    <Image Include="Resources\cylinder.png" />
+    <Image Include="Resources\extrude.png" />
+    <Image Include="Resources\fillet.png" />
+    <Image Include="Resources\FitAll.png" />
+    <Image Include="Resources\fuse.png" />
+    <Image Include="Resources\helix.png" />
+    <Image Include="Resources\Home.png" />
+    <Image Include="Resources\lamp.png" />
+    <Image Include="Resources\loft.png" />
+    <Image Include="Resources\Pan.png" />
+    <Image Include="Resources\revolve.png" />
+    <Image Include="Resources\Rotate.png" />
+    <Image Include="Resources\sphere.png" />
+    <Image Include="Resources\torus.png" />
+    <Image Include="Resources\wedge.png" />
+    <Image Include="Resources\Zoom.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
